@@ -1,0 +1,122 @@
+{
+  "categories": [
+    {
+      "name": "Suit",
+      "slug": "suit",
+      "image": "/assets/mensuit1.webp"
+    },
+    {
+      "name": "Frock",
+      "slug": "frock",
+      "image": "/assets/kurta1.jpg"
+    }
+  ],
+  "suits": [
+    {
+      "id": 1,
+      "name": "Elegant Maroon Suit",
+      "description": "Chiffon embroidered suit ideal for weddings and events.",
+      "price": 4800,
+      "image": "/assets/suit1.webp",
+      "slug": "elegant-maroon-suit"
+    },
+    {
+      "id": 2,
+      "name": "Soft Pink Suit",
+      "description": "Floral printed lawn suit with chiffon dupatta.",
+      "price": 4200,
+      "image": "/assets/suit2.webp",
+      "slug": "soft-pink-suit"
+    },
+    {
+      "id": 3,
+      "name": "Luxury Silk Suit",
+      "description": "Premium silk suit with hand embroidery.",
+      "price": 6500,
+      "image": "/assets/suit3.webp",
+      "slug": "luxury-silk-suit"
+    },
+    {
+      "id": 4,
+      "name": "Peach Designer Suit",
+      "description": "Elegant peach suit with sequin detailing and embroidery.",
+      "price": 5300,
+      "image": "/assets/suit4.jpg",
+      "slug": "peach-designer-suit"
+    },
+    {
+      "id": 5,
+      "name": "Midnight Black Suit",
+      "description": "Black cotton suit with golden patterns, ideal for formal wear.",
+      "price": 4900,
+      "image": "/assets/suit5.webp",
+      "slug": "midnight-black-suit"
+    },
+    {
+      "id": 6,
+      "name": "Turquoise Lawn Suit",
+      "description": "Breathable lawn fabric with printed dupatta.",
+      "price": 4000,
+      "image": "/assets/suit6.jpg",
+      "slug": "turquoise-lawn-suit"
+    },
+      {
+      "id": 7,
+      "name": "Turquoise Lawn Suit",
+      "description": "Breathable lawn fabric with printed dupatta.",
+      "price": 4000,
+      "image": "/assets/suit7.jpg",
+      "slug": "turquoise-lawn-suit"
+    }
+  ],
+  "frocks": [
+    {
+      "id": 2,
+      "name": "Anarkali Peach Frock",
+      "description": "Flowy frock with heavy embroidery and traditional look.",
+      "price": 5500,
+      "image": "/assets/frock1.jpg",
+      "slug": "anarkali-peach-frock"
+    },
+    {
+      "id": 3,
+      "name": "Layered Blue Frock",
+      "description": "Blue chiffon frock with layered bottom and net sleeves.",
+      "price": 4700,
+      "image": "/assets/frock2.webp",
+      "slug": "layered-blue-frock"
+    },
+    {
+      "id": 4,
+      "name": "Royal Green Maxi Frock",
+      "description": "Floor-length frock with stone work and dupatta.",
+      "price": 6200,
+      "image": "/assets/frock3.jpg",
+      "slug": "royal-green-maxi-frock"
+    },
+    {
+      "id": 5,
+      "name": "Floral White Frock",
+      "description": "White frock with colorful floral print and waist belt.",
+      "price": 4300,
+      "image": "/assets/frock4.jpg",
+      "slug": "floral-white-frock"
+    },
+    {
+      "id": 6,
+      "name": "Pink Formal Frock",
+      "description": "Pink silk frock with pearl detailing, suitable for parties.",
+      "price": 5000,
+      "image": "/assets/frock5.jpg",
+      "slug": "pink-formal-frock"
+    },
+    {
+      "id": 7,
+      "name": "Stylish Grey Frock",
+      "description": "Modern grey frock with lace work and side drape.",
+      "price": 4600,
+      "image": "/assets/frock6.webp",
+      "slug": "stylish-grey-frock"
+    }
+  ]
+}

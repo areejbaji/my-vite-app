@@ -1,0 +1,122 @@
+{
+  "categories": [
+    {
+      "name": "Suit",
+      "slug": "suit",
+      "image": "/assets/mensuitc.jpg"
+    },
+    {
+      "name": "Kurta",
+      "slug": "kurta",
+      "image": "/assets/menkurtac.jpg"
+    }
+  ],
+  "suits": [
+    {
+      "id": 1,
+      "name": "Classic Black Suit",
+      "description": "A timeless black suit perfect for formal occasions.",
+      "price": 12500,
+      "image": "/assets/mensuit1.webp",
+      "slug": "classic-black-suit"
+    },
+    {
+      "id": 2,
+      "name": "Royal Blue Suit",
+      "description": "Bold and stylish blue suit with a tailored fit.",
+      "price": 13200,
+      "image": "/assets/mensuit2.webp",
+      "slug": "royal-blue-suit"
+    },
+    {
+      "id": 3,
+      "name": "Charcoal Gray Suit",
+      "description": "Elegant gray suit suitable for business and events.",
+      "price": 11900,
+      "image": "/assets/mensuit4.webp",
+      "slug": "charcoal-gray-suit"
+    },
+    {
+      "id": 4,
+      "name": "Slim Fit Navy Suit",
+      "description": "Navy blue slim-fit suit crafted for modern style.",
+      "price": 14000,
+      "image": "/assets/mensuit5.webp",
+      "slug": "slim-fit-navy-suit"
+    },
+    {
+      "id": 5,
+      "name": "Beige Summer Suit",
+      "description": "Lightweight beige suit, ideal for summer gatherings.",
+      "price": 10800,
+      "image": "/assets/mensuit6.webp",
+      "slug": "beige-summer-suit"
+    },
+    {
+      "id": 6,
+      "name": "Three-Piece Check Suit",
+      "description": "Stylish checkered 3-piece suit with classic vibe.",
+      "price": 15000,
+      "image": "/assets/mensuit7.webp",
+      "slug": "three-piece-check-suit"
+    },
+    {
+      "id": 7,
+      "name": "Classic White Suit",
+      "description": "Formal white suit for modern-day grooms and events.",
+      "price": 13800,
+      "image": "/assets/mensuit8.jpg",
+      "slug": "classic-white-suit"
+    }
+  ],
+  "kurtas": [
+    {
+      "id": 1,
+      "name": "White Cotton Kurta",
+      "description": "Simple white kurta made with soft cotton fabric.",
+      "price": 2500,
+      "image": "/assets/kurta1.webp",
+      "slug": "white-cotton-kurta"
+    },
+    {
+      "id": 2,
+      "name": "Black Embroidered Kurta",
+      "description": "Elegant black kurta with traditional embroidery.",
+      "price": 3200,
+      "image": "/assets/kurta2.jpg",
+      "slug": "black-embroidered-kurta"
+    },
+    {
+      "id": 3,
+      "name": "Sky Blue Kurta",
+      "description": "Cool-toned sky blue kurta, perfect for summer.",
+      "price": 2800,
+      "image": "/assets/kurta3.jpg",
+      "slug": "sky-blue-kurta"
+    },
+    {
+      "id": 4,
+      "name": "Maroon Silk Kurta",
+      "description": "Festive silk kurta with a rich maroon color.",
+      "price": 4500,
+      "image": "/assets/kurta4.jpg",
+      "slug": "maroon-silk-kurta"
+    },
+    {
+      "id": 5,
+      "name": "Grey Casual Kurta",
+      "description": "Comfortable grey kurta suitable for daily wear.",
+      "price": 2200,
+      "image": "/assets/kurta5.webp",
+      "slug": "grey-casual-kurta"
+    },
+    {
+      "id": 6,
+      "name": "Olive Green Kurta",
+      "description": "Trendy olive green kurta with a relaxed fit.",
+      "price": 3000,
+      "image": "/assets/kurta6.webp",
+      "slug": "olive-green-kurta"
+    }
+  ]
+}
