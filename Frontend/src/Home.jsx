@@ -14,6 +14,10 @@ import men10 from "./assets/men10.jpg";
 import men9 from "./assets/men9.jpg";
 import men11 from "./assets/men11.jpg";
 import men7 from "./assets/men7.jpg";
+import NewArrivals from "./NewArrival";
+import Catagory from "./Catagory";
+import Hero from "./Hero";
+import PromoBanner from "./Banner";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -39,8 +43,9 @@ const Home = () => {
 
   return (
     <div>
+      <Hero/>
       {/* Hero Section */}
-      <div className="hero">
+      {/* <div className="hero">
         <div className="hero-text">
           <h2>Fashion That Defines You</h2>
           <p>
@@ -56,9 +61,9 @@ const Home = () => {
         <div className="hero-image">
           <img src={p15} alt="Fashion Models" />
         </div>
-      </div>
-
-      {/* Category Section */}
+      </div> */}
+      <Catagory/>
+      {/* Category Section
       <div className="categories">
         <h2>Shop by Categories</h2>
         <div className="category-list">
@@ -71,10 +76,10 @@ const Home = () => {
             <p>Men</p>
           </div>
         </div>
-      </div>
-
+      </div> */}
+        <NewArrivals/>
       {/* New Arrivals Section */}
-      <section className="new-arrival">
+      {/* <section className="new-arrival">
         <h2>New Arrivals</h2>
         <p>Stay ahead of trends with our latest collections</p>
         <div className="arrival-list">
@@ -102,7 +107,8 @@ const Home = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
+      <PromoBanner/>
     </div>
   );
 };

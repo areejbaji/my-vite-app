@@ -1,9 +1,11 @@
 import React from 'react';
  import './FAQ.css';
- 
+ import { useNavigate } from 'react-router-dom'; 
  const Faq = () => {
+   const navigate = useNavigate();
    return (
      <div className="faq-container">
+      <button onClick={() => navigate(-1)} className="back-button">← Back</button>
        <h1 className="faq-heading">Frequently Asked Questions</h1>
        <div className="faq-list">
  

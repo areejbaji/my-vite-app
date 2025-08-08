@@ -9,11 +9,13 @@ import ShippingPolicy from './Footer/Shippingpolicy';
 import Footer from './Footer/Footer';
 
 import ContactForm from './Footer/Contactus';
-import Faq from './Footer/FAQ';
+
 import WomenPage from './Women';
 import ProductDetailPage from './ProductDetailPage';
 import AboutUs from './AboutUs';
 import Men from './Men';
+import Faq from './Footer/Faq';
+import CartPage from './CartPage';
 
 
 
@@ -33,6 +35,7 @@ const App = () => {
         <Route path='Men' element={<Men />} />
         <Route path="/product/:id" element={<ProductDetailPage />} />
          <Route path='AboutUs' element={<AboutUs/>}/>
+         <Route path="/cart" element={<CartPage />} />
       </Routes>
       <Footer></Footer>
     </Router>

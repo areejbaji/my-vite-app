@@ -67,7 +67,45 @@
       "price": 4000,
       "image": "/assets/suit7.jpg",
       "slug": "turquoise-lawn-suit"
-    }
+    },
+    {
+      "id": 9,
+       "name":"3 Piece - Embroidered Suit - 42519414",
+       "description":"Embrace effortless elegance with this embroidered three-piece from the latest onora ready to stitch summer collection.",
+       "price":"7000",
+       "shirt":"Embroidered Cambric Front + Embroidered Front Hem Patti: 1 Meter Plain Cambric Shirt Back: 1 MeterEmbroidered Cambric Sleeves: 0.64 Meter",
+       "fabric":"cambric",
+       "color":"Black",
+       "dupatta":"Embroidered Poly Net Dupatta: 2.5 Meter",
+       "trouser":"Plain Cambric Trousers: 1.75 Meter",
+       "image": "/assets/suit10-front.webp",
+       "images":[
+       "/assets/suit10-front.webp",
+       "/assets/suit10clos.webp",
+       "/assets/suit10side.webp",
+       "/assets/suit10-full.webp"
+
+       
+       ],
+      "slug": "embroidered-suit-42519414"
+
+    },
+     {
+  "id": 8,
+  "name": "3 Piece - Digital Printed Suit",
+  "description": "Be unforgettable this season with this digitally printed three-piece from our latest Summer Collection, where vibrant prints, flowing fabrics, and effortless elegance come together for a striking seasonal statement.",
+  "price": 4800,
+  "images": [
+    "/assets/women1-front.jpg",
+    "/assets/women1-closeup.jpg",
+    "/assets/women1side.jpg",
+    "/assets/women1-back.jpg"
+  ],
+  "slug": "elegant-maroon-suit"
+}
+
+
+
   ],
   "frocks": [
     {

@@ -1,29 +1,55 @@
 
+
 import React, { useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import './ProductDetailPage.css';
+import { useDispatch } from 'react-redux';
+import { addToCart } from './redux/cartSlice';
+import data from './data/mensProducts.json'; // fallback data
 
 const sizeRanges = {
   XS: { length: [30, 32], waist: [24, 26], hip: [34, 36] },
   S: { length: [33, 35], waist: [27, 29], hip: [35, 37] },
   M: { length: [36, 38], waist: [30, 32], hip: [38, 40] },
   L: { length: [39, 41], waist: [33, 35], hip: [41, 43] },
-  XL: {length: [42, 44], waist: [36, 38], hip: [44, 46] },
+  XL: { length: [42, 44], waist: [36, 38], hip: [44, 46] },
 };
 
 const ProductDetailPage = () => {
   const { state } = useLocation();
+  const { id } = useParams();
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
-  const [selectedSize, setSelectedSize] = useState("");
-  const [measurements, setMeasurements] = useState({ chest: "", waist: "", hip: "" });
+  
+  let product = state;
+  if (!product) {
+    product =
+      data.suits.find(item => String(item.id) === id) ||
+      data.kurtas.find(item => String(item.id) === id);
+  }
 
-  if (!state) {
+  if (!product) {
     return <p>Product not found.</p>;
   }
 
-  const { name, price, description, image } = state;
+  const { name, price, description, image, images } = product;
 
+  
+  const normalizePath = (img) =>
+    img.startsWith('/') ? img : `/${img}`;
+
+  const mainImages = Array.isArray(images) && images.length > 0
+    ? images.map(normalizePath)
+    : image
+      ? [normalizePath(image)]
+      : [];
+
+  const [selectedImage, setSelectedImage] = useState(mainImages[0] || "");
+  const [selectedSize, setSelectedSize] = useState("");
+  const [measurements, setMeasurements] = useState({ length: "", waist: "", hip: "" });
+
+  
   const handleMeasurementChange = (type, value, min, max) => {
     if (value === "" || (value >= min && value <= max)) {
       setMeasurements((prev) => ({ ...prev, [type]: value }));
@@ -33,7 +59,6 @@ const ProductDetailPage = () => {
   const renderMeasurementInput = (label, type) => {
     if (!selectedSize) return null;
     const [min, max] = sizeRanges[selectedSize][type];
-
     return (
       <div className="measurement-group">
         <label>{label} ({min}″ - {max}″)</label>
@@ -49,17 +74,46 @@ const ProductDetailPage = () => {
     );
   };
 
+
+  const handleAddToCart = () => {
+    const cartItem = {
+      id: Date.now(),
+      name,
+      price,
+      image: selectedImage,
+      size: selectedSize,
+      measurements
+    };
+    dispatch(addToCart(cartItem));
+    alert("Item added to cart!");
+  };
+
   return (
     <div className="product-detail">
       <button onClick={() => navigate(-1)} className="back-button">← Back</button>
 
       <div className="detail-container">
-        {/* Left Image */}
+      
         <div className="detail-left">
-          <img src={image} alt={name} className="detail-img" />
+          <div className="thumbnail-column">
+            {mainImages.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`${name} thumbnail ${index + 1}`}
+                className={`thumbnail-image ${selectedImage === img ? 'active' : ''}`}
+                onClick={() => setSelectedImage(img)}
+              />
+            ))}
+          </div>
+
+          <div className="main-content">
+            <div className="main-image-container">
+              <img src={selectedImage} alt="Main Product" className="main-image" />
+            </div>
+          </div>
         </div>
 
-        {/* Right Info */}
         <div className="detail-right">
           <h2>{name}</h2>
           <p className="price">₨ {price}</p>
@@ -68,7 +122,7 @@ const ProductDetailPage = () => {
           <div className="size-section">
             <h3>Select Size:</h3>
             <div className="size-buttons">
-              {["XS", "S", "M", "L", "XL"].map((size) => (
+              {Object.keys(sizeRanges).map((size) => (
                 <button
                   key={size}
                   onClick={() => {
@@ -83,19 +137,20 @@ const ProductDetailPage = () => {
             </div>
           </div>
 
-          {/* Customize Section */}
+        
           {selectedSize && (
             <div className="customize-section">
               <h3>Customize Your Dress</h3>
-              {renderMeasurementInput("length", "length")}
+              {renderMeasurementInput("Length", "length")}
               {renderMeasurementInput("Waist", "waist")}
               {renderMeasurementInput("Hip", "hip")}
             </div>
           )}
 
-          {/* Add to Cart */}
           <div className="cart-section">
-            <button className="add-to-cart-btn">Add to Cart</button>
+            <button onClick={handleAddToCart} className="add-to-cart-btn">
+              Add to Cart
+            </button>
           </div>
         </div>
       </div>
@@ -104,3 +159,4 @@ const ProductDetailPage = () => {
 };
 
 export default ProductDetailPage;
+

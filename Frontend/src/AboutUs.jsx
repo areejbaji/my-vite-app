@@ -1,9 +1,12 @@
 import React from "react";
 import "./AboutUs.css" // Import CSS
-
+import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 const AboutUs = () => {
-  return (
+  const navigate = useNavigate();
+  return ( 
+     
     <div className="about-container">
+      <button onClick={() => navigate(-1)} className="back-button">← Back</button>
       <div className="about-content">
         <h1>Welcome to StyleHub</h1>
         <p className="about-tagline">"Your Fashion, Your Identity"</p>

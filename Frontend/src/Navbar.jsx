@@ -4,21 +4,23 @@ import { Link } from 'react-router-dom';
 import { FaUserCircle, FaShoppingCart, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
 import logo from "./assets/logo.jpg";
-
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
+  
+const cartItems = useSelector((state) => state.cart.items);
+const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
+
   return (
     <>
       <nav className="navbar">
-       
-      <div className="nav-logo">
-        <img src={logo} alt="StyleHub Logo" />
-        <h1>StyleHub</h1>
-      </div>
+        <div className="nav-logo">
+          <img src={logo} alt="StyleHub Logo" />
+          <h1>StyleHub</h1>
+        </div>
 
-        
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/women">Women</Link></li>
@@ -29,15 +31,26 @@ const Navbar = () => {
 
         <div className="nav-icons">
           <input type="text" className="search-bar" placeholder="Search..." />
-          <FaShoppingCart className="icon" />
-          <FaUserCircle className="icon" onClick={() => setSidebarOpen(true)} />
+          
+          <Link to="/cart" className="cart-link">
+            <FaShoppingCart />
+            <span className="cart-count">{cartCount}</span>
+          </Link>
+          
+          <FaUserCircle 
+            className="icon" 
+            onClick={() => setSidebarOpen(true)} 
+          />
         </div>
       </nav>
 
-      {/* Sidebar menu */}
+      {/* Sidebar */}
       {sidebarOpen && (
         <div className="sidebar">
-          <FaTimes className="close-icon" onClick={() => setSidebarOpen(false)} />
+          <FaTimes 
+            className="close-icon" 
+            onClick={() => setSidebarOpen(false)} 
+          />
           <h3>Profile Menu</h3>
           <ul>
             <li><Link to="/">Home</Link></li>
@@ -52,3 +65,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

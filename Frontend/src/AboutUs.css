@@ -1,8 +1,28 @@
-/* Light & Stylish Background */
+.back-button {
+  background-color: #111; 
+  color: #fff;            
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  background-color: #e50914; 
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
 .about-container {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to right, #fdfbfb, #ebedee); /* Soft Gradient */
+    background: linear-gradient(to right, #fdfbfb, #ebedee); 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,7 +34,7 @@
   .about-content {
     max-width: 800px;
     padding: 40px;
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    background: rgba(255, 255, 255, 0.8); 
     backdrop-filter: blur(10px);
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -32,7 +52,7 @@
     font-size: 1.4rem;
     font-style: italic;
     margin-bottom: 20px;
-    color: #5b97b8; /* Warm accent color */
+    color: #5b97b8; 
   }
   
   .about-description {
@@ -42,7 +62,7 @@
     color: #222;
   }
   
-  /* Highlight Sections */
+
   .about-highlights {
     display: flex;
     justify-content: space-between;
@@ -84,7 +104,7 @@
     font-size: 1.1rem;
     font-weight: bold;
     color: white;
-    background: #5b97b8; /* Warm accent color */
+    background: #5b97b8; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -95,7 +115,7 @@
     background: #454b8f;
   }
   
-  /* Responsive Design */
+
   @media (max-width: 768px) {
     .about-content {
       width: 90%;

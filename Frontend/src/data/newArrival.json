@@ -1,0 +1,149 @@
+[
+  {
+    "id": 1,
+    "name": "Green 3PC Suit",
+    "description": "Dark green 3-piece stitched suit with sharp cuts, ideal for semi-formal and festive occasions.",
+    "price": 4800,
+    "image": "/assets/1.jpg",
+    "slug": "green-3pc-suit"
+  },
+  {
+    "id": 2,
+    "name": "Peach 3PC Suit",
+    "description": "Peach-toned printed 3PC suit tailored with clean finishing, suited for casual and formal wear.",
+    "price": 3650,
+    "image": "/assets/2.webp",
+    "slug": "peach-3pc-suit"
+  },
+  {
+    "id": 3,
+    "name": "Yellow 3PC",
+    "description": "Stylish yellow suit in karandi fabric, paired with structured design for festive appearances.",
+    "price": 5400,
+    "image": "/assets/3.jpg",
+    "slug": "yellow-3pc-suit"
+  },
+  {
+    "id": 4,
+    "name": "Classic White Suit",
+    "description": "White 3PC cotton suit with neat embroidery — perfect for summer formals and meetings.",
+    "price": 4100,
+    "image": "/assets/4.webp",
+    "slug": "classic-white-suit"
+  },
+  {
+    "id": 5,
+    "name": "Gray 3PC",
+    "description": "Subtle gray suit crafted with lace detailing and fine tailoring for modern traditional style.",
+    "price": 4990,
+    "image": "/assets/7.jpg",
+    "slug": "gray-3pc-suit"
+  },
+  {
+    "id": 6,
+    "name": "Classic Black 2PC Suit",
+    "description": "Elegant black 2-piece suit with fine stitching, perfect for formal occasions and festive events.",
+    "price": 7490,
+    "image": "/assets/5.jpg",
+    "slug": "classic-black-2pc-suit"
+  },
+  {
+    "id": 7,
+    "name": "Graceful Charcoal Suit",
+    "description": "Charcoal-toned suit featuring soft fabric and sleek cuts — ideal for evening gatherings and traditional wear.",
+    "price": 7990,
+    "image": "/assets/men3.jpg",
+    "slug": "graceful-charcoal-suit"
+  },
+  {
+    "id": 8,
+    "name": "Royal Navy Blue Suit",
+    "description": "Stitched navy suit with subtle embroidery accents, perfect for weddings and cultural functions.",
+    "price": 8200,
+    "image": "/assets/10.webp",
+    "slug": "royal-navy-blue-suit"
+  },
+  {
+    "id": 9,
+    "name": "Soft Gray Formal Suit",
+    "description": "Light gray formal suit crafted in breathable blended fabric, ideal for summer festive wear.",
+    "price": 7350,
+    "image": "/assets/men6.jpg",
+    "slug": "soft-gray-formal-suit"
+  },
+  {
+    "id": 10,
+    "name": "Elegant Black Tux Set",
+    "description": "Black tuxedo stitched with premium detailing, designed for festive events and evening celebrations.",
+    "price": 8700,
+    "image": "/assets/11.webp",
+    "slug": "elegant-black-tux-set"
+  },
+  {
+    "id": 11,
+    "name": "Pearl Gray Suit",
+    "description": "Pastel pearl gray suit with delicate stitching, perfect for daytime weddings and soft looks.",
+    "price": 6990,
+    "image": "/assets/12.jpg",
+    "slug": "pearl-gray-suit"
+  },
+  
+  {
+    "id": 12,
+    "name": "Luxury Midnight Suit",
+    "description": "Midnight black suit with luxurious finish — a graceful piece for festive nights and occasions.",
+    "price": 9200,
+    "image": "/assets/14.webp",
+    "slug": "luxury-midnight-suit"
+  },
+  {
+    "id": 13,
+    "name": "Orange Frock",
+    "description": "Bright orange frock with delicate embroidery — ideal for festive and casual wear.",
+    "price": 9200,
+    "image": "/assets/frock2.webp",
+    "slug": "orange-frock"
+  },
+  {
+    "id": 14,
+    "name": "Green Suit",
+    "description": "Elegant green suit with fine threadwork — perfect for daytime functions and celebrations.",
+    "price": 9200,
+    "image": "/assets/42.jpg",
+    "slug": "green-suit"
+  },
+  {
+    "id": 15,
+    "name": "Frozi Suit",
+    "description": "Soothing frozi blue suit with soft texture — adds charm to your graceful wardrobe.",
+    "price": 9200,
+    "image": "/assets/47.jpg",
+    "slug": "froze-suit"
+  },
+  {
+    "id": 16,
+    "name": "Purpal Suit",
+    "description": "Royal purple suit with a modern cut — a bold pick for evening events and parties.",
+    "price": 9200,
+    "image": "/assets/444.jpg",
+    "slug": "purpal-suit"
+  },
+  {
+    "id": 17,
+    "name": "Light Blue Suit",
+    "description": "Light blue pastel suit featuring minimal design — perfect for casual or semi-formal outings.",
+    "price": 9200,
+    "image": "/assets/46.webp",
+    "slug": "light-blue-suit"
+  },
+  {
+    "id": 18,
+    "name": "Mud Suit",
+    "description": "Unique mauve-toned Madd suit with artistic patterns — blend of style and comfort.",
+    "price": 9200,
+    "image": "/assets/mensuit1.webp",
+    "slug": "madd-suit"
+  }
+]
+
+   

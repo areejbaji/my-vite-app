@@ -1,9 +1,12 @@
 import React from 'react';
  import "./Shippingpolicy.css";
+import { useNavigate } from 'react-router-dom';
  
  const ShippingPolicy = () => {
+  const navigate = useNavigate();
    return (
      <div className="shipping-container">
+      <button onClick={() => navigate(-1)} className="back-button">← Back</button>
        <h1>Shipping Policy</h1>
        <p>At StyleHub, we are committed to delivering your orders as quickly and efficiently as possible.</p>
  

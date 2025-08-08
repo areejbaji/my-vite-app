@@ -35,10 +35,13 @@
 //  export default ContactForm;
 import React from 'react';
  import "./Contactus.css";
+ import { useNavigate } from 'react-router-dom';
  
  const ContactForm = () => {
+   const navigate = useNavigate();
    return (
      <div className="contact-form-container">
+      <button onClick={() => navigate(-1)} className="back-button">← Back</button>
        <h1 className="form-title">Contact Us</h1>
        <form className="contact-form">
          <div className="form-group">

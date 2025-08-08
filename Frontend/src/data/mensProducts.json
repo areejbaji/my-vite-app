@@ -67,6 +67,18 @@
       "price": 13800,
       "image": "/assets/mensuit8.jpg",
       "slug": "classic-white-suit"
+    },
+    {
+      "id":9,
+      "name":"Satin Suit",
+      "description":"Luxurious satin suit with a glossy finish, perfect for evening events.",
+      "price":6669,
+      "images":[
+        "/assets/mensuit9-front.webp",
+        "/assets/mensuit9-side.webp",
+        "/assets/mensuit9-zoom.webp",
+        "/assets/mensuit9-back.webp"
+      ]
     }
   ],
   "kurtas": [

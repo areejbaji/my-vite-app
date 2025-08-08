@@ -1,9 +1,12 @@
 import React from 'react';
 import './termsandcondition.css';
- 
+ import { useNavigate } from 'react-router-dom';
  const TermsAndConditions = () => {
+    const navigate = useNavigate();
    return (
      <div className="terms-container">
+    
+       <button onClick={() => navigate(-1)} className="back-button">← Back</button>
        <h1>Terms and Conditions</h1>
        <p>Welcome to StyleHub! These terms and conditions outline the rules and regulations for the use of our website.</p>
  
